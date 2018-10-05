@@ -59,6 +59,10 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: 50% 50%
+=contain
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: 50% 50%
 
 =bg-size($width: 100%, $height: 100%)
   background-size: $width $height
@@ -184,7 +188,8 @@
   hyphens: auto
 
 =font-smoothing($val: antialiased)
-  font-smoothing: $val
+  -webkit-font-smoothing: $val
+  -moz-osx-font-smoothing: grayscale
 
 =selection
   & ::selection
@@ -273,4 +278,21 @@
     font-size: $font-size + px
   @if $letter-spacing != null
     letter-spacing: ($letter-spacing / 1000) + em
+    
+=flex-size($val)
+  flex: 0 0 $val
+  min-width: $val
+  
+=fadeout($tr)
+  opacity: 0
+  visibility: hidden
+  transition: opacity $tr, visibility $tr
 
+=fadein
+  opacity: 1
+  visibility: visible
+
+=circle($size)
+  height: $size + px
+  width: $size + px
+  border-radius: 50%

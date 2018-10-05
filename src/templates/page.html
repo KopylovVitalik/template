@@ -16,6 +16,29 @@ title: Index page
 	{{mixins.icon('facebook')}}
 
 
+	{# checkbox exepmle #}
+	<p>{{ mixins.checkbox() }}</p>
+	<p>
+		{{ mixins.checkbox({
+			checked: true,
+			name: 'exemple-name',
+			text: 'checkbox-checked'
+		}) }}
+	</p>
+	{# radio exepmle #}
+	{{ mixins.checkbox({
+		name: 'exemple-name',
+		text: 'text',
+		radio: true
+	}) }}
+	
+
+	{# breadcrumbs exepmle #}
+	{{ mixins.breadcrumbs({
+		list: ['Главная','Внутренняя','Корзина']
+	}) }}
+
+
 	{# data usage example #}
 		{% import "data/data.html" as tests %}
 		
