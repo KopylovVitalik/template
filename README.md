@@ -8,6 +8,14 @@ Clone this repo and then in command line type:
 
 --
 
+#How to use for cloe repo
+
+* `git clone https://github.com/DibssSolutions/template.git new_project_name`
+* set `cd new_project_name`
+* delete the folder `rm -rf .git` `git init` `git commit -m "commit name"` `git remote add origin "rep"` `git push -u origin master`
+
+--
+
 ## List of Gulp tasks
 
 To run separate task type in command line `gulp [task_name]`.
