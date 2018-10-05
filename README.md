@@ -8,7 +8,7 @@ Clone this repo and then in command line type:
 
 --
 
-#How to use for cloe repo
+#How to use for clone repo
 
 * `git clone https://github.com/DibssSolutions/template.git new_project_name`
 * set `cd new_project_name`
