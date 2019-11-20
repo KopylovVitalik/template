@@ -279,10 +279,19 @@
   @if $letter-spacing != null
     letter-spacing: ($letter-spacing / 1000) + em
     
-=flex-size($val)
+=fsize($val)
   flex: 0 0 $val
   min-width: $val
-  
+
+=fcenter
+  display: flex
+  justify-content: center
+  align-items: center
+
+=icenter
+  display: inline-block
+  vertical-align: middle
+
 =fadeout($tr)
   opacity: 0
   visibility: hidden
